@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import EthereumBalanceCard from './components/EthereumBalanceCard';
+import CosmosBalanceForm from "./components/CosmosBalanceForm";
+import AboutContract from './components/AboutContract';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+      <EthereumBalanceCard></EthereumBalanceCard>
+      <br></br>
+      <CosmosBalanceForm></CosmosBalanceForm>
+      <br></br>
+      <AboutContract></AboutContract>
+      </div>
+      
+
     </div>
   );
 }
